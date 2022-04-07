@@ -70,6 +70,10 @@ body{
 }
 .preloader{
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .preloader.show{
     display: block;
@@ -87,8 +91,12 @@ body{
     margin-bottom: 3px;
     text-decoration: none;
 }
+.result__link:focus,
 .result__link:hover{
     text-decoration: underline;
+}
+.result__link:visited{
+    color: #C58AF9;
 }
 .result__desc{
     color: #BDC1D6;
